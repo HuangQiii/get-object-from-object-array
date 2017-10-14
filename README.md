@@ -1,0 +1,1 @@
+# get-object-from-object-array
