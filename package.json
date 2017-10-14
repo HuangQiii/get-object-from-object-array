@@ -6,9 +6,15 @@
   "scripts": {
     "test": "mocha"
   },
+  "devDependencies": {
+    "gulp-format-md": "^0.1.5",
+    "mocha": "*",
+    "should": "*"
+  },
   "keywords": [
-    "object"
+    "get",
+    "object Array"
   ],
   "author": "qihuang",
-  "license": "ISC"
+  "license": "MIT"
 }
