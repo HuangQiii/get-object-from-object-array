@@ -1,0 +1,14 @@
+{
+  "name": "get-one-in-object-array",
+  "version": "1.0.1",
+  "description": "根据某个属性从对象数组中找出对象",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "object"
+  ],
+  "author": "qihuang",
+  "license": "ISC"
+}
