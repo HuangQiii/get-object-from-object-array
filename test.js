@@ -4,11 +4,11 @@ var should = require('should');
 var findDataInObjectArray = require('./');
 
 describe('findDataInObjectArray', function () {
-    it('should return the first element in the array:', function () {
-        findDataInObjectArray.getFirstIndex([{ a: 1, b: 2 }, { a: 10, b: 20 }, { a: 100, b: 200 }], 'a', '10').should.eql(1);
+    it('should return the first index in the array:', function () {
+        findDataInObjectArray.getFirstIndex([{ id: 1, name: 'a' }, { id: 2, name: 'a' }, { id: 3, name: 'b' }, { id: 4, name: 'c' }], 'name', 'a').should.eql(0);
     });
 
-    it('should the first n elements of the array:', function () {
-        findDataInObjectArray.getFirstIndex([{ a: 1, b: 2 }, { a: 10, b: 20 }, { a: 100, b: 200 }], 'a', '1000').should.eql(-1);
+    it('should return -1 if none in the array:', function () {
+        findDataInObjectArray.getFirstIndex([{ id: 1, name: 'a' }, { id: 2, name: 'a' }, { id: 3, name: 'b' }, { id: 4, name: 'c' }], 'name', 'd').should.eql(-1);
     });
 });
