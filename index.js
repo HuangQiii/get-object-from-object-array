@@ -1,10 +1,18 @@
 'use strict';
-//1.0.2
-module.exports = function (arr, propertyName, value) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i][propertyName] == value) {
-            return i;
-        }
-    }
-    return -1;
-};
+
+var getFirstIndex = function (arr, propertyName, value) {
+    return arr.findIndex(x => x[propertyName] == value);
+}
+
+var getFirst = function (arr, propertyName, value) {
+    return arr.find(x => x[propertyName] == value);
+}
+
+var getAll = function (arr, propertyName, value) {
+    return arr.filter(x => x[propertyName] == value);
+}
+
+exports.getFirstIndex = getFirstIndex;
+exports.getFirst = getFirst;
+exports.getAll = getAll;
+
